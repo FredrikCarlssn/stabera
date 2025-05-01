@@ -26,33 +26,37 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-20 bg-gradient-to-b from-[#0a2236] to-[#0e2d47]">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900">Why Choose Stabera?</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-stabera-gradient animate-shimmer animate-fade-in-up">Why Choose Stabera?</h2>
+          <p className="mt-4 text-lg text-cyan-100 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s', animationFillMode: 'both'}}>
             Bringing the stability of the Swedish Krona to the innovative world of cryptocurrency.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature) => (
-            <div key={feature.name} className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="h-12 w-12 rounded-md bg-sek-blue text-white p-2 mb-5">
+          {features.map((feature, idx) => (
+            <div
+              key={feature.name}
+              className="bg-[#1a2a3a] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 transform hover:scale-102 transition-transform duration-300 animate-fade-in-up"
+              style={{animationDelay: `${0.3 + idx * 0.1}s`, animationFillMode: 'both', boxShadow: '0 2px 12px 0 #0a223688'}}
+            >
+              <div className="h-12 w-12 rounded-md bg-[#22334a] text-cyan-300 p-2 mb-5 flex items-center justify-center">
                 <feature.icon />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.name}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-white mb-3">{feature.name}</h3>
+              <p className="text-cyan-100">{feature.description}</p>
             </div>
           ))}
         </div>
         
-        <div className="mt-20 bg-gradient-to-r from-sek-blue to-primary rounded-lg shadow-lg">
-          <div className="p-8 text-center text-white">
+        <div className="mt-20 bg-gradient-to-r from-cyan-400 to-green-400 rounded-lg shadow-lg animate-fade-in-up" style={{animationDelay: '0.7s', animationFillMode: 'both'}}>
+          <div className="p-8 text-center text-[#0a2236]">
             <h3 className="text-2xl font-bold mb-4">Ready to embrace the future of Swedish finance?</h3>
             <a
               href="mailto:info@stabera.com"
-              className="inline-block btn bg-white text-primary hover:bg-gray-100 mt-4"
+              className="inline-block px-8 py-4 rounded-xl font-semibold bg-[#16243a] text-white shadow-md hover:bg-white hover:text-[#16243a] hover:border hover:border-[#16243a] transition-all duration-200 mt-4"
             >
               Email info@stabera.com
             </a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import coinLogo from '../img/stabera-coin.png';
 
 const Footer: React.FC = () => {
   return (
@@ -6,7 +7,10 @@ const Footer: React.FC = () => {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8">
           <div className="flex-1">
-            <div className="text-2xl font-bold text-white mb-4">Stabera</div>
+            <div className="flex-1 flex items-center mb-4">
+              <img src={coinLogo} alt="Stabera Coin Logo" className="h-8 w-8 mr-2" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent tracking-wide">STABERA</span>
+            </div>
             <p className="text-gray-400 mb-8">
               Sweden's first SEK-backed stablecoin, bringing the stability of the Swedish Krona to the blockchain.
             </p>
