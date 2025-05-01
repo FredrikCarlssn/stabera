@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.de076032.css",
-    "main.js": "/static/js/main.e6c8817d.js",
+    "main.css": "/static/css/main.b9c1959b.css",
+    "main.js": "/static/js/main.0d79daa9.js",
     "static/js/453.e606f592.chunk.js": "/static/js/453.e606f592.chunk.js",
+    "static/media/stabera-coin.png": "/static/media/stabera-coin.686371e17cb8b9c606e5.png",
+    "static/media/stabera-text-logo.png": "/static/media/stabera-text-logo.bcce1f9b7b643d4d3901.png",
     "index.html": "/index.html",
-    "main.de076032.css.map": "/static/css/main.de076032.css.map",
-    "main.e6c8817d.js.map": "/static/js/main.e6c8817d.js.map",
+    "main.b9c1959b.css.map": "/static/css/main.b9c1959b.css.map",
+    "main.0d79daa9.js.map": "/static/js/main.0d79daa9.js.map",
     "453.e606f592.chunk.js.map": "/static/js/453.e606f592.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de076032.css",
-    "static/js/main.e6c8817d.js"
+    "static/css/main.b9c1959b.css",
+    "static/js/main.0d79daa9.js"
   ]
 }
